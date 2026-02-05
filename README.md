@@ -85,3 +85,7 @@ https://tuist.dev
 ## Architecture Diagram
 
 ![Hexagonal Architecture Diagram](docs/hex-architecture.png)
+
+## Reference Diagram (Clean Architecture)
+
+![Hexagonal Architecture Reference](docs/hexagonalArchtecture.png)
