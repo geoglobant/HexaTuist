@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .title { font: 700 24px Arial, sans-serif; fill: #222; }
+      .label { font: 600 16px Arial, sans-serif; fill: #222; }
+      .small { font: 500 13px Arial, sans-serif; fill: #333; }
+      .box { fill: #d7ecff; stroke: #3b7ddd; stroke-width: 2; rx: 12; }
+      .box-green { fill: #dff4e5; stroke: #3aa85b; stroke-width: 2; rx: 12; }
+      .hex { fill: #f6c58d; stroke: #d6883e; stroke-width: 3; }
+      .line { stroke: #666; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <text x="70" y="50" class="title">Hexagonal Architecture (Ports & Adapters)</text>
+
+  <text x="70" y="90" class="label">Primary / Driving Adapters</text>
+  <text x="820" y="90" class="label">Secondary / Driven Adapters</text>
+
+  <!-- Left boxes -->
+  <rect x="70" y="140" width="220" height="70" class="box" />
+  <text x="95" y="180" class="label">UI screen #1</text>
+
+  <rect x="70" y="250" width="220" height="70" class="box" />
+  <text x="95" y="290" class="label">UI screen #2</text>
+
+  <rect x="70" y="360" width="220" height="70" class="box" />
+  <text x="95" y="400" class="label">UI screen #3</text>
+
+  <!-- Right boxes -->
+  <rect x="910" y="160" width="220" height="70" class="box-green" />
+  <text x="950" y="200" class="label">Storage</text>
+
+  <rect x="910" y="270" width="220" height="70" class="box-green" />
+  <text x="955" y="310" class="label">Bluetooth</text>
+
+  <rect x="910" y="380" width="220" height="70" class="box-green" />
+  <text x="965" y="420" class="label">REST API</text>
+
+  <!-- Hexagon (Domain Model) -->
+  <polygon class="hex" points="600,200 700,260 700,380 600,440 500,380 500,260" />
+  <text x="548" y="315" class="label">Domain</text>
+  <text x="548" y="345" class="label">Model</text>
+
+  <!-- Adapter labels (left) -->
+  <text x="320" y="185" class="small">Presenter / ViewModel</text>
+  <text x="320" y="295" class="small">Presenter / ViewModel</text>
+  <text x="320" y="405" class="small">Presenter / ViewModel</text>
+
+  <!-- Adapter labels (right) -->
+  <text x="770" y="195" class="small">Storage Adapter</text>
+  <text x="770" y="305" class="small">Bluetooth Adapter</text>
+  <text x="770" y="415" class="small">REST Adapter</text>
+
+  <!-- Lines left to hex -->
+  <line x1="290" y1="175" x2="500" y2="260" class="line" />
+  <line x1="290" y1="285" x2="500" y2="320" class="line" />
+  <line x1="290" y1="395" x2="500" y2="380" class="line" />
+
+  <!-- Lines hex to right -->
+  <line x1="700" y1="260" x2="910" y2="195" class="line" />
+  <line x1="700" y1="320" x2="910" y2="305" class="line" />
+  <line x1="700" y1="380" x2="910" y2="415" class="line" />
+</svg>

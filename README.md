@@ -81,3 +81,7 @@ Learn more at:
 ```
 https://tuist.dev
 ```
+
+## Architecture Diagram
+
+![Hexagonal Architecture Diagram](docs/hex-architecture.svg)
