@@ -84,4 +84,4 @@ https://tuist.dev
 
 ## Architecture Diagram
 
-![Hexagonal Architecture Diagram](docs/hex-architecture.svg)
+![Hexagonal Architecture Diagram](docs/hex-architecture.png)
